@@ -67,7 +67,7 @@ A real-time chat application built with **FastAPI**, **WebSockets**, and **SQLit
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/websocket-chat-app.git
+git clone https://github.com/khapchi/websocket-chat-app.git
 cd websocket-chat-app
 
 # Build and run with Docker
@@ -79,7 +79,7 @@ docker run -p 8000:8000 websocket-chat
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/websocket-chat-app.git
+git clone https://github.com/khapchi/websocket-chat-app.git
 cd websocket-chat-app
 
 # Create virtual environment
@@ -97,7 +97,7 @@ uvicorn main_improved:app --reload --host 0.0.0.0 --port 8000
 
 ```bash
 # Clone and run with docker-compose
-git clone https://github.com/yourusername/websocket-chat-app.git
+git clone https://github.com/khapchi/websocket-chat-app.git
 cd websocket-chat-app
 docker-compose up --build
 ```
