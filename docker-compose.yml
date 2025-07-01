@@ -1,5 +1,5 @@
 # docker-compose.prod.yml - Production setup with PostgreSQL
-version: '3.8'
+#version: '3.8'
 
 services:
   web:

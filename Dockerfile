@@ -1,5 +1,5 @@
 # Use Python 3.11 slim image for better compatibility
-FROM python:3.11-slim-bookworm
+FROM python:3.12-slim
 
 # Set environment variables
 ENV PYTHONDONTWRITEBYTECODE=1 \
@@ -14,8 +14,7 @@ RUN apt-get update \
     && apt-get upgrade -y \
     && apt-get dist-upgrade -y \
     && apt-get autoremove -y \
-    && apt-get clean \
-
+    && apt-get clean 
 
 # Create non-root user for security
 RUN groupadd -r appuser && useradd -r -g appuser appuser
