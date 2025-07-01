@@ -90,7 +90,7 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
 # Run the application
-uvicorn main_improved:app --reload --host 0.0.0.0 --port 8000
+uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ```
 
 ### **Option 3: Docker Compose**
@@ -108,7 +108,7 @@ docker-compose up --build
 
 ```
 websocket-chat-app/
-├── main_improved.py              # Enhanced backend with authentication
+├── main.py              # Enhanced backend with authentication
 ├── main_simple.py               # Pure SQLite version (no SQLAlchemy)
 ├── main.py                      # Original version
 ├── templates/
@@ -232,7 +232,7 @@ python troubleshoot.py
 
 # Or manually
 rm chat.db
-uvicorn main_improved:app --reload
+uvicorn main:app --reload
 ```
 
 ## 🐳 **Docker Deployment**
